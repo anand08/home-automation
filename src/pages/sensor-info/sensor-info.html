@@ -1,0 +1,48 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button icon-only menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Sensor info</ion-title>
+    <button ion-button icon-only item-left (click)="onRefresh()">
+      <ion-icon name="flower"></ion-icon>
+    </button>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-card ion-item class="sensor-card">
+    <ion-icon name="flower" item-left></ion-icon>
+    <ion-card-content>
+      <h2>Humidity</h2>
+    </ion-card-content>
+  </ion-card>
+  <ion-card ion-item class="sensor-card">
+    <ion-icon name="cloudy-night" item-left></ion-icon>
+    <ion-card-content>
+      <h2>Temperature</h2>
+    </ion-card-content>
+    <ion-badge item-end></ion-badge>
+  </ion-card>
+  <ion-card ion-item class="sensor-card">
+    <ion-icon name="ionic" item-left></ion-icon>
+    <ion-card-content>
+      <h2>Moisture</h2>
+    </ion-card-content>
+    <ion-badge item-end></ion-badge>
+  </ion-card>
+  <ion-card ion-item class="sensor-card">
+    <ion-icon name="flame" item-left></ion-icon>
+    <ion-card-content>
+      <h2>Flame</h2>
+    </ion-card-content>
+    <ion-badge item-end></ion-badge>
+  </ion-card>
+  <ion-card ion-item class="sensor-card">
+    <ion-icon name="flask" item-left></ion-icon>
+    <ion-card-content>
+      <h2>Gas Leak</h2>
+    </ion-card-content>
+    <ion-badge item-end></ion-badge>
+  </ion-card>
+</ion-content>

@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button icon-only menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Devices</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-list>
+    <ion-item *ngFor="let devices of loads; let i=index">
+      <ion-icon [name]="devices.icon" item-left></ion-icon>
+      <ion-label>
+        <h2>{{ devices.name }}</h2>
+        <p>{{ devices.deviceName }}</p>
+      </ion-label>
+      <ion-toggle [checked]="devices.state" (ionChange)="onDeviceTurnOnOff($event, i)" item-right></ion-toggle>
+    </ion-item>
+  </ion-list>
+</ion-content>
